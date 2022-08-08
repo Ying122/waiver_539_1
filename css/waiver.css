@@ -39,6 +39,10 @@ figure > figcaption {
 }
 
 @media (min-width: 650px) {
+    .jump:focus {
+        top: 0px;
+        z-index: 1;
+    }
     .container {
         grid-template-columns: 25% 25% 25%;
         justify-content: space-evenly;
