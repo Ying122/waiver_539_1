@@ -1,9 +1,20 @@
-.logo {
-    animation-duration: 10s;
-    animation-name: fadeIn;
-}
+@media (prefers-reduced-motion: reduce) {
+    .logo {
+        animation: none;
+    }
+  }
+  /*
+    If the browser understands the media query and the user
+    explicitly hasn't set a preference, then use animations on buttons.
+  */
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation-duration: 10s;
+        animation-name: fadeIn;
+    }
+  }
 
-@keyframes fadeIn {
+  @keyframes fadeIn {
     from {
         opacity: 0;
     }
