@@ -3,16 +3,13 @@
         animation: none;
     }
   }
-  /*
-    If the browser understands the media query and the user
-    explicitly hasn't set a preference, then use animations on buttons.
-  */
-  @media (prefers-reduced-motion: no-preference) {
+
+@media (prefers-reduced-motion: no-preference) {
     .logo {
         animation-duration: 10s;
         animation-name: fadeIn;
     }
-  }
+}
 
   @keyframes fadeIn {
     from {
